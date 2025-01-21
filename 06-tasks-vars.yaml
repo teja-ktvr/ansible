@@ -8,12 +8,12 @@
   tasks:
   - name: print variables
     vars: # Task level variables / Local variables, accessible only within the tasks. Tasks variables can override play level variables.
-      COURSE: Ansible
+      COURSE: "Ansible"
     ansible.builtin.debug:
       msg: " Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }} "
 
   tasks:
-  - name: print variables
+  - name: print variables1
     ansible.builtin.debug:
       msg: " Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }} "
  
