@@ -1,0 +1,9 @@
+- name: variables from files
+  hosts: local
+  connection: local
+  vars_files:
+  - vars-files.yaml
+  tasks:
+  - name: print course details
+    ansibl e.builtin.debug:
+      msg: "Course name is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
