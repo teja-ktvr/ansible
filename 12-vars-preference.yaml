@@ -5,10 +5,10 @@
     GREET: "play level variable"
   # vars_files:
   # - vars.yaml
-  vars_prompt:
-  - name: GREET
-    prompt: enter the value of prompt level
-    private: false
+  # vars_prompt:
+  # - name: GREET
+  #   prompt: enter the value of prompt level
+  #   private: false
   tasks:
   - name: print variable
     # vars:
