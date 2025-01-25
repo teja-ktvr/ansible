@@ -34,7 +34,7 @@
     vars:
       name: Teja Vardhan Reddy K
     ansible.builtin.debug:
-      msg: "{{ name | lower }}"
+      msg: "Name in lower: {{ name | lower }} and Name in upper: {{ name | upper }}"
 
   - name: convert lower to upper
     vars:
