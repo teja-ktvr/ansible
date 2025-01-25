@@ -35,8 +35,6 @@
       name: Teja Vardhan Reddy K
     ansible.builtin.debug:
       msg: "{{ name | lower }}"
-      msg: "{{ name | upper }}"
-
 
   - name: convert lower to upper
     vars:
@@ -48,4 +46,10 @@
     vars:
       numbers: [ 24, 47, 19, 4543, 2 ]
     ansible.builtin.debug:
-      msg: "Max number is {{ numbers | max}} and Min number is {{ numbers | min }}"
+      msg: "Max number is {{ numbers | max }} and Min number is {{ numbers | min }}"
+
+  - name: check whether the ip address is valid or not 
+    vars:
+      ip: "2563.245.264.1"
+      ansible.builtin.debug:
+        msg: "{{ ip | ansible.utils.ipaddr }}" 
