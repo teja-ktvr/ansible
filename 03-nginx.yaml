@@ -11,3 +11,7 @@
       name: nginx
       state: started
       enabled: yes
+  - name: uninstall nginx
+    ansible.builtin.package:
+      name: nginx
+      state: absent
